@@ -1,6 +1,6 @@
 services:
     scribe:
-        image: ghcr.io/gitgitro/scribe.rip-docker:latest
+        image: ghcr.io/gitgitro/scribe-rip-docker:main
         ports:
             - 8080:8080
         environment:

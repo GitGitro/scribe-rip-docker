@@ -1,4 +1,4 @@
-FROM node:16-alpine as node_build
+FROM node:16-alpine AS node_build
 WORKDIR /tmp_build
 
 COPY package.json .
@@ -9,7 +9,7 @@ COPY webpack.mix.js .
 COPY src ./src
 RUN yarn prod
 
-FROM 84codes/crystal:1.8.1-alpine as lucky_build
+FROM 84codes/crystal:1.8.1-alpine AS lucky_build
 ENV SKIP_LUCKY_TASK_PRECOMPILATION="1"
 RUN apk add yaml-static
 WORKDIR /tmp_build

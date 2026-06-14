@@ -8,7 +8,7 @@ To get you started:
 ```
 services:
     scribe:
-        image: ghcr.io/gitgitro/scribe.rip-docker:latest
+        image: ghcr.io/gitgitro/scribe-rip-docker:main
         ports:
             - 8080:8080
         environment:
@@ -18,7 +18,7 @@ services:
 
 All credits to [edwardloveall](https://git.sr.ht/~edwardloveall/) for the project
 
-
+Original README below
 
 # Scribe - An Alternative Medium Frontend
 
