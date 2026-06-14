@@ -12,6 +12,8 @@ services:
         ports:
             - 8080:8080
         environment:
+            - PUID=1000
+            - PGID=1000
             - SCRIBE_PORT=8080
             - SCRIBE_HOST=0.0.0.0
 ```

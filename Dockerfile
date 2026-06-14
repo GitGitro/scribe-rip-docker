@@ -33,6 +33,7 @@ COPY --chown=lucky:lucky --from=node_build /tmp_build/public public
 COPY --chown=lucky:lucky --from=lucky_build /tmp_build/start_server start_server
 COPY --chown=lucky:lucky --from=lucky_build /tmp_build/run_task run_task
 COPY --chown=lucky:lucky ./script/docker_entrypoint ./
+RUN chmod +x /home/lucky/app/docker_entrypoint
 
 RUN mkdir ./config
 RUN chown -R lucky /home/lucky
